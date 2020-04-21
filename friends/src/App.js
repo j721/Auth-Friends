@@ -1,7 +1,11 @@
 import React from 'react';
 
+
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'; 
+//components
 import PrivateRoute from './components/PrivateRoute';
+import Login from './components/Login';
+import AddFriend from './components/AddFriend';
 
 import './App.css';
 
