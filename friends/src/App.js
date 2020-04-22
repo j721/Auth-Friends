@@ -7,6 +7,7 @@ import PrivateRoute from './components/PrivateRoute';
 import Login from './components/Login';
 import AddFriend from './components/AddFriend';
 import UpdateFriend from './components/UpdateFriend';
+import Friends from './components/Friends';
 
 import './App.css';
 
