@@ -18,7 +18,7 @@ class DeleteFriend extends React.Component{
     changeHandler = e =>{
         e.preventDefault();
         console.log(this.state.id);
-        this.setState({id: event.target.value})
+        this.setState({id: e.target.value})
     }
 
 
@@ -29,7 +29,7 @@ class DeleteFriend extends React.Component{
                     <input onChange ={this.changeHandler}
                         placeholder="id">
                         </input>
-                    <button>Remove Friend</button>
+                    <button>DeleteFriend</button>
                 </form>
             </div>
         )
