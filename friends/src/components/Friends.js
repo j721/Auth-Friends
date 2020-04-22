@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import Loader from 'react-loader-spinner';
 
 class Friends extends React.Component {
   constructor() {
@@ -30,6 +31,7 @@ class Friends extends React.Component {
     return (
       <div className="friends-list">
         <h2>List of Friends:</h2>
+        {/* <Loader type="Puff" color="#00BFFF" height={100} width={100} /> */}
         {this.state.friends.map((friend) => (
           <div className="friendsData">{`${friend.name}, ${friend.age} years old`}</div>
         ))}
