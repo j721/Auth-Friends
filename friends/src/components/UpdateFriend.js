@@ -24,10 +24,26 @@ class UpdateFriend extends React.Component {
     return (
       <div>
         <form onSubmit={this.submitHandler}>
-          <input onChange={this.changeHandler} name="id" />
-          <input onChange={this.changeHandler} name="name" />
-          <input onChange={this.changeHandler} name="age" />
-          <input onChange={this.changeHandler} name="email" />
+          <input onChange={this.changeHandler} name="id"
+          placeholder="id"
+          value={this.state.id}
+          />
+
+          <input onChange={this.changeHandler} name="name" 
+          placeholder="name"
+          value ={this.state.name}
+          />
+
+          <input onChange={this.changeHandler} name="age" 
+          placeholder="age"
+          value={this.state.age}
+          />
+
+          <input onChange={this.changeHandler} name="email"
+          placeholder="email" 
+          value={this.state.email}
+          />
+
           <button>Update</button>
         </form>
       </div>

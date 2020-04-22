@@ -1,19 +1,72 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#e383b9, #5f65e9);
+  color: white;
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
+  padding: 4.5%;
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin: 10%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-a{
+a {
   padding: 5%;
+  text-decoration: none;
+  color: white; 
+
 }
 
-input{
+i {
+  font-size: 12px;
+}
+
+input {
+  padding: 6px;
+  background: none;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin: 5%;
+}
+
+input::placeholder {
+  color: #4147ad;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 6px 8px;
+  font-size: 16px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ffffff22;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.friends-list{
+  margin-top: 5%;
+}
+
+.friendsData{
   margin: 5%;
 }
