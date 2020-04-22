@@ -27,8 +27,9 @@ class Friends extends React.Component{
 
     render(){
         return(
-            <div>
-                Friends List: {this.state.}
+            <div classname ="friends-list">
+                List of Friends: {this.state.friends.map(friend=>
+                <div> {`${friend.name}, ${friend.age} years old`} </div>)}
             </div>
         )
     }
