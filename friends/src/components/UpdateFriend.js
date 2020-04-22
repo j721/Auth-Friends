@@ -1,5 +1,4 @@
 import React from "react";
-import React from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 
 class UpdateFriend extends React.Component {
@@ -17,7 +16,23 @@ class UpdateFriend extends React.Component {
   };
 
   changeHandler = (event) => {
-      event.preventDefault();
-      this.setState({...this.state, [event.target.name]:event.target.value})
+    event.preventDefault();
+    this.setState({ ...this.state, [event.target.name]: event.target.value });
   };
+
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.submitHandler}>
+          <input onChange={this.changeHandler} name="id" />
+          <input onChange={this.changeHandler} name="name" />
+          <input onChange={this.changeHandler} name="age" />
+          <input onChange={this.changeHandler} name="email" />
+          <button>Update</button>
+        </form>
+      </div>
+    );
+  }
 }
+
+export default UpdateFriend;

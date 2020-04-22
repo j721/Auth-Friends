@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import Login from './components/Login';
 import AddFriend from './components/AddFriend';
+import UpdateFriend from './components/UpdateFriend';
 
 import './App.css';
 
