@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
 const Login =props=> {
@@ -9,20 +9,20 @@ const Login =props=> {
     })
 
 
-  handleChange = e => {
+ const handleChange = e => {
     setCredentials({
         ...credentials,
         [e.target.name]: e.target.value
     });
   };
 
- login = e => {
+ const login = e => {
     e.preventDefault();
     axiosWithAuth()
-      .post('/api/login', this.state.credentials)
+      .post('/api/login', credentials)
       .then(res => {
         localStorage.setItem('token', JSON.stringify(res.data.payload));
-        this.props.history.push('/protected');
+        this.props.history.push('/friends');
       })
       .catch(err => console.log({ err }));
   };

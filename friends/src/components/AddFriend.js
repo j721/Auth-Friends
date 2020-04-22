@@ -21,7 +21,7 @@ class AddFriend extends React.Component {
 
   changeHandler = (event) => {
     this.setState({
-      friends: {
+      friend: {
         ...this.state.friend,
         [event.target.name]: event.target.value,
       },
@@ -33,9 +33,19 @@ class AddFriend extends React.Component {
       <div className="add-friend">
         <h2>Add Your Friend!</h2>
         <form onSubmit={this.submitHandler}>
-          <input onChange={this.changeHandler} name="name" />
-          <input onChange={this.changeHandler} name="age" />
-          <input onChange={this.changeHandler} name="email" />
+          <input onChange={this.changeHandler} 
+          value ={this.state.friend.name}
+          type="text"
+          name="name" />
+
+          <input onChange={this.changeHandler} 
+          value={this.state.friend.age}
+            type="text"
+          name="age" />
+          <input onChange={this.changeHandler}
+          value={this.state.friend.email}
+          type="text"
+          name="email" />
           <button>Add</button>
         </form>
       </div>

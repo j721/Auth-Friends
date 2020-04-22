@@ -22,10 +22,10 @@ function App() {
           <Link to='/updateFriend'>Update Friend</Link>
      
       <Switch>
-        <PrivateRoute exact path ='/addFriend' component = {AddFriend}/>
-        <PrivateRoute exact path ='/friends' component ={Friends}/>
-        <PrivateRoute exact path ='/updateFriend' component ={UpdateFriend}/>
-        <Route path ='/login' component ={Login}/>
+        <PrivateRoute path ='/addFriend' component = {AddFriend}/>
+        <PrivateRoute  path ='/friends' component ={Friends}/>
+        <PrivateRoute path ='/updateFriend' component ={UpdateFriend}/>
+        <Route exact path ='/login' component ={Login}/>
       </Switch>
 
     </div>
