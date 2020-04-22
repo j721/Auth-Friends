@@ -4,7 +4,10 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(#e383b9, #5f65e9);
+  background-image: url('https://images.unsplash.com/photo-1495106245177-55dc6f43e83f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  /* background-image: linear-gradient(#e383b9, #5f65e9); */
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -15,12 +18,14 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
+  font-weight: 900; 
 }
 
 a {
   padding: 4%;
   text-decoration: none;
   color: white; 
+  font-weight: bolder;
 
 }
 
@@ -30,15 +35,15 @@ i {
 
 input {
   padding: 6px;
-  background: none;
-  border: none;
+  background: #1a722a6b;
+  border: 1px solid white;
   color: white;
-  border-bottom: 1px solid white;
   margin: 5%;
+  border-radius: 0.5em;
 }
 
 input::placeholder {
-  color: #4147ad;
+  color:white;
 }
 
 input:focus {
@@ -48,7 +53,7 @@ input:focus {
 button {
   padding: 6px 8px;
   font-size: 16px;
-  background: none;
+  background: #068a30d1;
   color: white;
   border: 1px solid white;
   border-radius: 4px;
@@ -65,6 +70,15 @@ button:focus {
 
 .friends-list{
   margin-top: 5%;
+  background: #0d21128a;
+  opacity: 0.93;
+  width: 78%;
+  margin: 5% 12%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  flex-direction: column;
 }
 
 .friendsData{
